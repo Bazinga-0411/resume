@@ -1,0 +1,81 @@
+\documentclass[a4paper,english]{article}
+
+\usepackage{graphicx}
+
+\usepackage{babel,csquotes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%
+% Bibiliography %
+%%%%%%%%%%%%%%%%%
+
+\usepackage{biblatex}
+
+% get rid of the number-labels ([1], [2], etc.) in front of publications
+\defbibenvironment{midbib}
+{\list
+        {}
+        {
+                \setlength{\leftmargin}{0mm}
+                \setlength{\itemindent}{\leftmargin}
+                \setlength{\itemsep}{\bibitemsep}
+                \setlength{\parsep}{\bibparsep}}
+}
+{\endlist}
+{\item}
+
+%%%%%%%%
+% Temp %
+%%%%%%%%
+% Delete these in production
+\usepackage[pangram]{blindtext}
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%%
+% Mimic Word %
+%%%%%%%%%%%%%%
+
+% Set header rules
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\setlength\headsep{20pt}
+
+% Use the header
+\chead{} % Use image
+\lhead{} % Clear left
+\rhead{} % Clear right
+% Manipulate fonts
+\usepackage{fontspec}
+
+% Allow centering of sections==zzzzzzzzzzxx
+\def\centersec#1{\centering#1} % kanged from https://tex.stackexchange.com/questions/193629/how-to-center-an-unnumbered-section-name
+
+\title{Qinyang Huang's Personal Statement for MSDS NeU}
+
+% Change these
+\author{Yiwei Yang}
+
+\begin{document}
+
+\section*{\centersec{Qinyang Huang's Personal Statement for MSDS NeU}}
+\quad\ Today's world's financial market's growth is unprecedented. We couldn't believe the explosion of information in wind news API, etc., would take effect in the next tick of order book momentum. With the assurance of the data analysis tool and high-performance computing, we can imagine the great opportunity of utilizing the power of computing to make intelligent choices in the market. Recently proposed chatGPT is a trend of letting people think whether essential work with little knowledge and brain will be replaced. The question made me want to dig into the data science magic deeply. The application of Reinforcement Learning in trading bots and capturing the news API to infer the next tick's price is my dream job. I've been excited to be a practitioner in the field for a long.
+
+My journey at University has given me an interdisciplinary view. I gain complete Further Mathematics, Linear Algebra, Probability Theory, and Mathematical Statistics and Python Programming training. During which I was equipped with the power of computing the multi-variable calculus, derivative and high-dimensional matrices computation, and basic model of probability. The school valued the practical usage of the knowledge rather than giving our problems merely. From Computer Networks and Databases, I know how big data is transmitted and managed. For sure, I have courses like marketing, business, and quantitative calculation of option and derivatives pricing models. These fuel me with a high-level view of how the financial market is running.
+
+Since my second year of study, I have put myself into the job market to see how my ability can be put into practice. My first attempt is Lieping.com, a Chinese version of LinkedIn. As a support representative for Lieping.com's internal talent resume database, my job likely involved helping employers and employees navigate the database and find the best matches for their needs. In this role, I probably learned about the importance of organization and attention to detail in managing a large database of resumes. I also gained knowledge about the hiring process and the skills and experiences employers are looking for in potential candidates. Additionally, I likely honed my customer service skills by providing support and assistance to database users. Overall, working at Lieping.com likely provided that the data with recommendation digging can provide value to both employers and employees.
+
+My second internship starts at Huaxin Securities Limited Liability Company. As a data analyst for Huaxin, my job likely involved using Excel and Python to extract and analyze data from the Wind Database. In this role, I likely gained proficiency in using Excel and its various features, such as formulas and pivot tables, to manipulate and analyze large datasets. I may have also learned how to use other tools and techniques, such as data visualization, to present my findings and make them easily understandable to others. Additionally, I likely developed my problem-solving and critical thinking skills by using the data to identify trends and patterns and then generating suggestions based on my analysis. Overall, working at Huaxin likely provided me with valuable experience and knowledge in data analysis and the use of Excel and Python, which I can use in future job roles.
+
+My final thesis is to look at how executive equity incentives affected high-tech companies' dual innovation strategies. I demonstrated exceptional abilities in independent research throughout my assignment. I have demonstrated a good capacity for self-learning, reading volumes of excellent literature, comprehending numerous regression models, and applying them to empirical analysis in accordance with the different data types. I demonstrated my abilities as a capable early-stage researcher by being well-organized, meeting deadlines promptly, asking concise, pertinent questions, working effectively alone, and completing statistical analysis at an advanced level. I broadly covered the subject of finance and quantitative research aside from the final thesis.
+
+Currently, as a financial analyst for Huaxin, my job likely involves using Excel to collect, organize, and analyze data related to over-the-counter business, IPO subscriptions, and other financial transactions. In this role, I likely gained proficiency in using Excel and Python and its various features to perform financial calculations and analyze data. I also learned about the principles of financial analysis, such as evaluating the potential risks and rewards of investment and making informed decisions based on my analysis. Additionally, I likely developed my problem-solving and critical thinking skills by using data to identify trends and patterns and make recommendations to my boss. Overall, working at Huaxin likely provided me with valuable experience and knowledge in financial analysis and the use of Excel and Python, which I can use in future job roles.
+
+I'm a lifetime learner because I'm aware of my vision of combining data and finance and eventually landing a Data Scientist job in a fintech company. I regard myself as a person with strong self-learning ability. I spend most of my spare time on self-strength improvement. I am self-studying Data Structure in python on Coursera, C++ on QuantNet, FRM, and CFA. I embrace strong communication ability. I have been running my own online store during the coronavirus. Through this fun process, I have cultivated a good business understanding and the ability to communicate with customers.
+
+For choosing NeU MSDS, I've always been interested in getting full data science training. A/B testing, and DL, ML, or RL solutions to prior legacy heuristic solutions to historical data are crucial for hunting now and future financial markets. I think my knowledge of finance and basic data visualization and reasoning knowledge can be enlarged by the MSDS provided by NeU. And last but not least, the location in Silicon Valley is the best place for my dream job in the fintech market for providing services for companies from Silicon Valley.
+
+\end{document}

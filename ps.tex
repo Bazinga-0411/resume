@@ -1,0 +1,72 @@
+\documentclass[a4paper,english]{article}
+
+\usepackage{graphicx}
+
+\usepackage{babel,csquotes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%
+% Bibiliography %
+%%%%%%%%%%%%%%%%%
+
+\usepackage{biblatex}
+
+% get rid of the number-labels ([1], [2], etc.) in front of publications
+\defbibenvironment{midbib}
+{\list
+	{}
+	{
+		\setlength{\leftmargin}{0mm}
+		\setlength{\itemindent}{\leftmargin}
+		\setlength{\itemsep}{\bibitemsep}
+		\setlength{\parsep}{\bibparsep}}
+}
+{\endlist}
+{\item}
+
+%%%%%%%%
+% Temp %
+%%%%%%%%
+% Delete these in production
+\usepackage[pangram]{blindtext}
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%%
+% Mimic Word %
+%%%%%%%%%%%%%%
+
+% Set header rules
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\setlength\headsep{20pt}
+
+% Use the header
+\chead{} % Use image
+\lhead{} % Clear left
+\rhead{} % Clear right
+% Manipulate fonts
+\usepackage{fontspec}
+
+% Allow centering of sections==zzzzzzzzzzxx
+\def\centersec#1{\centering#1} % kanged from https://tex.stackexchange.com/questions/193629/how-to-center-an-unnumbered-section-name
+
+\title{Personal Statement}
+
+% Change these
+\author{Yiwei Yang}
+
+\begin{document}
+
+\section*{\centersec{Personal Statement}}
+\quad \ As a finance professional with a strong interest in technology, I am excited to apply to the University of Michigan's Master of Science in Data Science program. I am confident that this program will provide me with the skills and knowledge necessary to succeed in my career goals of using data science to drive innovation and efficiency in the finance industry.
+
+One of the things that sets me apart as a candidate is my open mind when it comes to technology. I am always eager to learn about new tools and techniques, and I have a strong track record of applying this knowledge to solve real-world problems. For example, during my time in the finance industry, I have been able to leverage my technical skills to develop and implement new trading strategies that have helped my company stay ahead of the competition.
+
+In addition to my technical skills, I am also deeply committed to making a positive impact in the world. As someone who is part of the LGBT community, I understand the challenges and discrimination that members of this community face. I am proud to be an ally and to support my spouse, who is a transgender woman, in her journey. I believe that everyone deserves to be treated with respect and dignity, regardless of their gender identity or sexual orientation.
+
+I am confident that my combination of technical expertise and commitment to social justice make me a strong fit for the UMich MSDS program. I am excited about the opportunity to learn from and collaborate with other talented and passionate students, and I am eager to contribute my skills and experiences to the program. I am confident that the UMich MSDS program will provide me with the knowledge and skills necessary to achieve my career goals and make a positive impact in the world.
+\end{document}

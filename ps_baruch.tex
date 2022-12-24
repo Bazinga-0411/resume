@@ -1,0 +1,76 @@
+\documentclass[a4paper,english]{article}
+
+\usepackage{graphicx}
+
+\usepackage{babel,csquotes}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%
+% Bibiliography %
+%%%%%%%%%%%%%%%%%
+
+\usepackage{biblatex}
+
+% get rid of the number-labels ([1], [2], etc.) in front of publications
+\defbibenvironment{midbib}
+{\list
+	{}
+	{
+		\setlength{\leftmargin}{0mm}
+		\setlength{\itemindent}{\leftmargin}
+		\setlength{\itemsep}{\bibitemsep}
+		\setlength{\parsep}{\bibparsep}}
+}
+{\endlist}
+{\item}
+
+%%%%%%%%
+% Temp %
+%%%%%%%%
+% Delete these in production
+\usepackage[pangram]{blindtext}
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%%
+% Mimic Word %
+%%%%%%%%%%%%%%
+
+% Set header rules
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{geometry}
+\setlength\headsep{20pt}
+
+% Use the header
+\chead{} % Use image
+\lhead{} % Clear left
+\rhead{} % Clear right
+% Manipulate fonts
+\usepackage{fontspec}
+
+% Allow centering of sections==zzzzzzzzzzxx
+\def\centersec#1{\centering#1} % kanged from https://tex.stackexchange.com/questions/193629/how-to-center-an-unnumbered-section-name
+
+\title{Master of Science in Financial Engineering Essay}
+
+% Change these
+\author{Yiwei Yang}
+
+\begin{document}
+
+\section*{\centersec{Master of Science in Financial Engineering Essay}}
+\quad \ I have always been fascinated by the financial industry and the ways in which technology and data can be used to make informed, intelligent decisions in the market. This passion, combined with a strong foundation in mathematics, programming, and data analysis, has motivated me to pursue graduate studies in financial engineering.
+
+Throughout my academic journey, I have gained a strong foundation in the necessary technical skills and knowledge to succeed in this field. I have completed courses in Further Mathematics, Linear Algebra, Probability Theory, and Mathematical Statistics, as well as Python Programming. These courses have equipped me with the ability to perform multi-variable calculus, derivative and high-dimensional matrix computations, and a basic understanding of probability. In addition, courses in Computer Networks and Databases have given me insight into how big data is transmitted and managed. I have also completed courses in marketing, business, and quantitative calculation of option and derivative pricing models, which have provided me with a high-level understanding of the financial market.
+
+In addition to my academic pursuits, I have also gained valuable experience in the financial industry through internships at Lieping.com and Huaxin Securities. At Lieping.com, I worked as a support representative for the company's internal talent resume database. In this role, I helped employers and employees navigate the database and find the best matches for their needs. I gained an understanding of the importance of organization and attention to detail in managing a large database, as well as knowledge about the hiring process and the skills and experiences employers are looking for in potential candidates. I also honed my customer service skills by providing support and assistance to database users.
+
+At Huaxin Securities, I worked as a data analyst, using Excel and Python to extract and analyze data from the Wind Database. In this role, I gained proficiency in using Excel and its various features, such as formulas and pivot tables, to manipulate and analyze large datasets. I also learned how to use other tools and techniques, such as data visualization, to present my findings and make them easily understandable to others. My work at Huaxin also allowed me to develop my problem-solving and critical thinking skills by using the data to identify trends and patterns and then generating suggestions based on my analysis.
+
+My strong foundation in mathematics, programming, and data analysis, as well as my experience in the financial industry, have prepared me well for graduate studies in financial engineering. I am confident that the Baruch MFE program, with its focus on practical application and real-world experience, will provide me with the opportunity to further develop my skills and knowledge in this field. Upon graduating, I hope to use my expertise in financial engineering and data analysis to work in a role that involves utilizing the power of computing to make intelligent choices in the financial market, such as applying reinforcement learning in trading bots or capturing news API to infer price movements.
+
+I am excited about the potential to make a positive impact in the financial industry through my work, and am committed to continuing to learn and grow as a financial engineer throughout my career. I believe that the Baruch MFE program is the ideal next step in my journey and will provide me with the skills and knowledge I need to succeed in my career goals.
+\end{document}
