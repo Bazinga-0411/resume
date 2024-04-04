@@ -2,7 +2,7 @@
 
 \newcommand{\en}[1]{#1}
 \newcommand{\zh}[1]{}
-
+\usepackage{enumitem}
 \zh{\usepackage{xeCJK}}
 % \zh{\setCJKmainfont{SourceHanSansHWSC-Regular}}
 % \zh{\setCJKsansfont{SourceHanSansHWSC-Regular}}
@@ -22,25 +22,28 @@
 % \en{Financial Mathematics Graduate Student with over 3 years of hands-on experience in data analysis as well as market trading. Skilled in 
 % data visualization, modeling, and machine learning, using software tools including Python, SQL, and R.}
 \section{\en{Education}\zh{教育经历}}
-\en{\datedsubsection{\textbf{\href{https://ncsu.edu}{North Carolina State University}}, Master ofr Financial Mathematics}{09/2023 -- 01/2025}}
-\vspace{2 mm}
+\en{\datedsubsection{\textbf{\href{https://ncsu.edu}{Global Association of Risk Professionals (GARP)}}}{05/2021}}
 \zh{\datedsubsection{\textbf{\href{https://ncsu.edu}{北卡州立}}, 本科}{2023/09 -- 2025/01}}
-\begin{itemize}
-      \item \en{Major: Master of Financial Mathematics, ranked 4th in Risk.net.  
-      Financial Risk Analysis, Machine Learning, Financial Data Analysis with Python \& R, Statistical Inference, Stochastic Calculus for 
-      Finance, Monte Carlo Methods for Financial Math, Options and Derivatives Pricing}
-            \zh{工商管理，完成计算机网络、数据库、金融、高等数学}
-\end{itemize}
-\vspace{2 mm}
+\begin{itemize}[]
 
-\en{\datedsubsection{\textbf{\href{http://en.usst.edu.cn/}{University of Shanghai for Science and Technology}}, Undergraduate}{09/2018 -- 06/2022}}
-\vspace{2 mm}
-\zh{\datedsubsection{\textbf{\href{http://www.usst.edu.cn/main.htm}{上海理工大学}}, 本科}{2018/09 -- 2022/06}}
-\begin{itemize}
-      \item \en{Major: Business Admistration, finished Computer Network, Database, Finance, Marketing, Further Mathematics, Probability and Statistics, Programming Language}
+      \item FRM Program - Passed FRM Exam Part I
+\end{itemize}
+\en{\datedsubsection{\textbf{\href{https://ncsu.edu}{North Carolina State University}}}{08/2023 -- 12/2024}}
+\zh{\datedsubsection{\textbf{\href{https://ncsu.edu}{北卡州立}}, 本科}{2023/09 -- 2025/01}}
+\begin{itemize}[]
+
+      \item \en{Master of Financial Mathematics (GPA: 4.0/4.0)}
             \zh{工商管理，完成计算机网络、数据库、金融、高等数学}
 \end{itemize}
-\vspace{2 mm}
+
+\en{\datedsubsection{\textbf{\href{http://en.usst.edu.cn/}{University of Shanghai for Science and Technology}}}{09/2018 -- 06/2022}}
+\zh{\datedsubsection{\textbf{\href{http://www.usst.edu.cn/main.htm}{上海理工大学}}, 本科}{2018/09 -- 2022/06}}
+\begin{itemize}[]
+
+      \item \en{Bachelor of Business Administration(3.59/4.0)}
+            \zh{工商管理，完成计算机网络、数据库、金融、高等数学}
+\end{itemize}
+% \vspace{2 mm}
 
 
 \section{\en{Work Experience}\zh{工作经历}}
@@ -92,30 +95,31 @@
 
 \section{\en{Project}\zh{项目}}
 \begin{itemize}[parsep=0.25ex]
-      \item \textbf{Assessing Credit Risk and Predicting Loan Defaults with XGBoost Model } \href{https://github.com/Bazinga-0411/AAPL_Price_Prediction/}{Bazinga/AAPL\_Price\_Prediction}
+     
+            \item \datedsubsection{\en{\href{https://github.com/Bazinga-0411/Market-Risk-sp24}{\textbf{Market Risk Analysis of American Express (AXP) and S\&P 500 ETF (SPY) }} }     }{02/2024 -- 04/2024}
+            \begin{itemize}
+                  \item Data Acquisition: Sourced daily closing price data for AXP and SPY from January 1, 2021, to March 8, 2024, utilizing Python and the yfinance library, to ensure accurate and reliable input for subsequent analysis.
+                  \item Volatility Analysis Using GARCH (1,1): Calculated daily log returns based on closing prices of AXP and SPY, then applied the GARCH (1,1) model to estimate asset volatility.
+                  \item Statistical Model Validation: Conducted comprehensive robustness checks, including evaluating the Log-Likelihood, AIC, BIC, and p-value statistics. This process validated the GARCH model’s effectiveness in accurately capturing the volatility dynamics, ensuring the reliability of our volatility estimates.
+                  \item Risk Metrics Calculation: Derived the one-day 99\% Value at Risk (VaR) and Expected Shortfall (ES) for AXP, SPY, and their combined portfolio using historical simulation based on daily log returns.
+                  \item RAROC Analysis: Utilized Python to compute the Risk-Adjusted Return on Capital (RAROC) for AXP, SPY, and their portfolio. 
+                  
+            \end{itemize}
+            \item \datedsubsection{\href{https://github.com/Bazinga-0411/AAPL_Price_Prediction/}{\textbf{Assessing Credit Risk and Predicting Loan Defaults with XGBoost Model } }}{08/2023 -- 12/2023}
            
             \begin{itemize}
-                  \item Utilized a Freddie Mac single-family loan dataset with 500,000 mortgage loans, 27 features and the binary label from 2000 to 2018.
-
-                 \item Conducted comprehensive data processing, including the application of feature selection techniques like forward feature selection and LASSO.
+                  \item Data Handling: Utilized the Freddie Mac single-family loan dataset encompassing 500,000 mortgage loans with 27 features (2000-2018), applying comprehensive data processing and feature selection techniques, including forward feature selection and LASSO.
+                 \item Imbalance and Categorical Data: Addressed data imbalance with SMOTE and converted categorical data into booleans via one-hot encoding, ensuring data quality for model training.
+                  Modeling and Optimization: Implemented and compared multiple machine learning models (Logistic Regression, Random Forest, XGBoost), utilizing hyperparameter tuning to enhance accuracy effectively.
+                  \item Outcomes: Achieved significant predictive performance, evidenced by an F-1 score of 0.93 and an AUC-ROC score of 0.98, demonstrating the model's robustness in predicting loan defaults accurately.
                   
-                 \item Addressed data imbalance using SMOTE and transformed categorical data into booleans through one-hot encoding.
                   
-                 \item Adopted multiple machine learning models such as Logistic Regression, Random Forest and XGBoost to predict default status, using hyperparameter tunning to enhance model accuracy.
-                  
-                 \item Achieved a high prediction rate with an F-1 score value of 0.93 and an AUC-ROC score value of 0.98 .
 
             \end{itemize}
-            \item \en{\textbf{Mini Project: Risk Analysis of AXP and SPY }\href{https://github.com/Bazinga-0411/Market-Risk-sp24}{Bazinga-0411/Market-Risk-sp24}}           
-            \begin{itemize}
-            \item The aim of this mini project is to perform a risk analysis of American Express (AXP) and the S\&P 500 Index (SPY) using historical stock price data from January 1, 2021, to March 8, 2024.
-            \item The project involves downloading data, calculating returns, fitting GARCH(1,1) models, and analyzing the correlation between AXP and SPY returns.
-            \end{itemize}
-
-            \item \en{{\textbf{FIM548 Project: Lookback Call}}\href{https://github.com/Bazinga-0411/FIM548-sp24-hw3}{Bazinga/Lookback-Call-sp24}}           
-            \begin{itemize}
-            \item The aim of this mini project is to perform a risk analysis of American Express (AXP) and the S\&P 500 Index (SPY) using historical stock price data from January 1, 2021, to March 8, 2024. The project involves downloading data, calculating returns, fitting GARCH(1,1) models, and analyzing the correlation between AXP and SPY returns.
-            \end{itemize}
+            % \item \en{{\textbf{FIM548 Project: Lookback Call}}\href{https://github.com/Bazinga-0411/FIM548-sp24-hw3}{Bazinga/Lookback-Call-sp24}}           
+            % \begin{itemize}
+            % \item The aim of this mini project is to perform a risk analysis of American Express (AXP) and the S\&P 500 Index (SPY) using historical stock price data from January 1, 2021, to March 8, 2024. The project involves downloading data, calculating returns, fitting GARCH(1,1) models, and analyzing the correlation between AXP and SPY returns.
+            % \end{itemize}
 \end{itemize}
 
 \section{\en{Skills}\zh{技能}}
